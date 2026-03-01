@@ -88,11 +88,15 @@ Performed extensive data cleaning and transformation using **Power Query**:
 
 ## 🧱 Data Model
 The Excel Data Model follows a **star-schema-inspired design**:
-- ⭐ **Fact Table**: P&L metrics (Net Sales, COGS, Gross Margin)
+- ⭐ **Fact Tables**:
+  - fact_Sales_monthly
 - 📂 **Dimension Tables**:
-  - Date (Month, Quarter, Fiscal Year)
-  - Market
-  - Region / Sub-zone
+  - dim_Customer
+  - dim_market
+  - dim_product
+  - dim_date
+
+ <img width="1013" height="512" alt="image" src="https://github.com/user-attachments/assets/1b745644-3e04-4b1f-9928-db2accd804ef" />
 
 This structure enables fast slicing, filtering, and scalable analysis using Pivot Tables and DAX.
 
