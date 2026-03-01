@@ -27,8 +27,8 @@ This project demonstrates strong fundamentals in **financial analysis**, **data 
 - 📈 Analysis & Insights  
 - 📊 Excel Dashboard Overview  
 - 📂 Repository Structure  
-- 💡 Skills Demonstrated  
-- 🚀 Future Improvements  
+- 💡 Technical Skills
+- 🚀 Soft Skills 
 
 ---
 
