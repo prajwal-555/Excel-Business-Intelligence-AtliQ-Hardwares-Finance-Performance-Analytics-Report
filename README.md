@@ -101,13 +101,15 @@ This structure enables fast slicing, filtering, and scalable analysis using Pivo
 
 ## 📐 Key Metrics (DAX)
 Key measures created using DAX include:
-- 💰 Net Sales 
-- 🧾 COGS
-- 📈 Gross Margin
-- 📊 Gross Margin %
-- 📅 YoY Growth %
-- 🔁 Quarter-over-Quarter (QoQ) Comparison
-- 🌍 Market Contribution %
+- 💰 Net Sales - SUM(fact_sales_monthly[net_sales_amount])
+- 💰 Net Sales 2019 - CALCULATE([Net Sales],dim_date[FY]="2019")
+- 💰 Net Sales 2019 - CALCULATE([Net Sales],dim_date[FY]="2020")
+- 💰 Net Sales 2019 - CALCULATE([Net Sales],dim_date[FY]="2021")
+- 🧾 COGS - SUM(fact_sales_monthly[total_cogs])
+- 📈 Gross Margin - [Net Sales]-[COGS]
+- 📊 Gross Margin % - DIVIDE([Gross Margin],[Net Sales],0)
+- 📅 21 vs 20 % - DIVIDE([Net Sales 21],[Net Sales 20],0)
+
 
 All metrics dynamically respond to filters across time periods and markets.
 
@@ -138,7 +140,21 @@ The Excel dashboard includes:
 - 📌 **Executive Summary KPIs**
 - 📆 **Monthly & Quarterly Trend Analysis**
 - 🌍 **Market-wise Performance Comparison**
-- 🔥 **Gross Margin % Heatmaps**
-- 🎛 **Interactive slicers** for Year, Quarter, Market, and Region
+- 🔥 **Gross Margin % DataBars**
+- 🎛 **Interactive filters** for Year, Quarter, Market, and Region
 
 > The dashboard is fully dynamic and built using Pivot Charts connected to the Data Model.
+
+## 🎯 Technical & Soft Skills:
+- [x]	Proficiency in ETL methodology (Extract, Transform, Load).
+- [x]	Skills to generate a date table using Power Query.
+- [x]	Ability to derive fiscal months and quarters.
+- [x]	Establishing data model relationships with Power Pivot.
+- [x]	Proficiency in incorporating supplementary data into an existing data model.
+- [x]	Utilizing DAX to create calculated columns.
+
+## 🎯 Soft Skills:
+- [x]	Refined understanding of Sales & Finance Reports
+- [x]	Designing user-centric reports with empathy in mind.
+- [x]	Optimization of report generation through meticulous fine-tuning.
+- [x]	Developing a systematic approach to devising a report building plan.
